@@ -1,0 +1,66 @@
+.clients-section {
+    text-align: left;
+    color: white;
+    margin-top: 100px;
+    background-color: #000; /* Black background */
+}
+
+.clients-section h2 {
+    font-size: 60px;
+    font-weight: 700;
+    margin: 0;
+    font-family: "Aspekta", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.clients-section p {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 16px;
+    line-height: 1.5;
+    max-width: 600px;
+}
+
+.clients-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.client-card {
+    background-color: #222;
+    padding: 0; /* Removed padding to make the image fill the space */
+    font-size: 18px;
+    display: flex;
+    height: 24vh; /* Keep height fixed, adjust as needed */
+    font-weight: bold;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    align-items: center; /* Align content vertically */
+    justify-content: center; /* Align content horizontally */
+    overflow: hidden; /* Ensure overflow is hidden */
+    position: relative; /* Position context for image */
+}
+
+.client-card img {
+    width: 100%; /* Stretch image to fill full width of card */
+    height: 100%; /* Make image fill the height of the card */
+    object-fit: contain; /* Ensure image covers the entire card area */
+    border-radius: 10px; /* Optional: Round the image corners */
+}
+
+.client-card:hover {
+    transform: translateY(-10px);
+}
+
+@media (max-width: 768px) {
+    .clients-grid {
+        grid-template-columns: repeat(1, 1fr); /* 1 column on smaller screens */
+    }
+    .clients-section {
+        padding: 15px;
+    }
+    .clients-section h2 {
+        font-size: 48px;
+    }
+}

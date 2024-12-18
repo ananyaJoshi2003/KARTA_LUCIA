@@ -1,0 +1,96 @@
+.projects-section {
+    background-color: #111;
+    color: white;
+    padding: 20px;
+    font-family: "Aspekta", sans-serif;
+  }
+  
+  .projects-heading {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .projects-heading h1 {
+    margin-top: 60px;
+    font-size: 3.5rem;
+    font-weight: 900;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+  }
+  
+  .projects-heading p {
+    font-size: 1.2rem;
+    color: #aaa;
+  }
+  
+  .projects-grid {
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+    padding: 0 10px;
+  }
+  
+  .projects-card {
+    /* border: 2px solid red; */
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .projects-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
+  }
+  
+  .projects-card img {
+    /* border: 2px solid white; */
+    width: 100%;
+    height: 70vh;
+    /* padding: 20px; */
+    object-fit: cover;
+    border-radius: 36px;
+    border-radius: 10px;
+  }
+  
+  .projects-card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 10px;
+  }
+  
+  .projects-card:hover .projects-card-overlay {
+    opacity: 1;
+  }
+  
+  .projects-card-overlay h2 {
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 0 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .projects-heading h1 {
+      font-size: 2.5rem;
+    }
+  
+    .projects-heading p {
+      font-size: 1rem;
+    }
+  }
+  

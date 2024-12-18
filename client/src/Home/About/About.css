@@ -1,0 +1,136 @@
+/* General Styles */
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    margin-top: 100px;
+}
+
+.content {
+    max-width: 50%;
+    z-index: 2;
+    position: relative;
+    margin-right: 10px;
+}
+
+.title {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1;
+    font-weight: bold;
+    width: 100%;
+    text-align: left;
+    font-family: "Aspekta", sans-serif, sans-serif;
+    font-optical-sizing: auto;
+}
+
+.description {
+    margin: 20px 0;
+    margin-right: 30px;
+    font-size: 1rem;
+    text-align: justify;
+}
+
+.image-container {
+    max-width: 50%;
+    position: relative;
+}
+
+.about-image {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Tablet Landscape */
+@media (max-width: 1024px) and (orientation: landscape) {
+    .about-section {
+        /* padding: 30px;
+        border: 2px solid red; */
+    }
+
+    .content {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .image-container {
+        max-width: 100%;
+    }
+
+    .title {
+        text-align: left;
+    }
+
+    .description {
+        font-size: 1rem;
+    }
+
+    .contact-link {
+        font-size: 1.2rem;
+    }
+}
+
+/* Mobile Portrait */
+@media (max-width: 768px) {
+    .about-section {
+        flex-direction: column;
+        /* padding: 20px; */
+        padding: 15px;
+    }
+
+    .content {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .image-container {
+        max-width: 100%;
+        text-align: center;
+        margin-top: 45px;
+    }
+
+    .title {
+        font-size: 48px;
+        text-align: left;
+        width: auto;
+    }
+
+    .description {
+        font-size: 0.9rem;
+        text-align: left;
+    }
+
+    .contact-link {
+        font-size: 1rem;
+    }
+
+    .about-contact {
+        justify-content: center;
+    }
+}
+
+/* Mobile Landscape */
+@media (max-width: 768px) and (orientation: landscape) {
+    .about-section {
+        padding: 15px;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .description {
+        font-size: 0.8rem;
+    }
+
+    .contact-link {
+        font-size: 0.9rem;
+    }
+}

@@ -1,0 +1,115 @@
+/* contact.css */
+
+.contact-section {
+  background-color: #000;
+  color: #fff;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+}
+.vertical-line {
+  height: auto; /* Adjust to inherit the height of the parent container */
+  align-self: stretch; /* Ensure it spans the full height of the parent */
+  background-color: #fff; /* White color to ensure visibility */
+  width: 2px; /* Adjust width for a proper line thickness */
+  margin: 0 10px; /* Add some horizontal spacing */
+}
+
+.contact-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: -50px;
+}
+
+.contact-heading {
+  font-size: 60px;
+  font-weight: 700;
+  margin: 0;
+  line-height: normal;
+  font-family: "Aspekta", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.contact-arrow {
+  font-size: 3em;
+  margin-left: auto;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+  align-items: stretch; /* Ensure children stretch properly */
+  width: 100%;
+  max-width: 1200px;
+}
+
+.contact-item {
+  max-width: 30%;
+}
+
+.contact-title {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.contact-details {
+  font-size: 1em;
+  line-height: 1.5em;
+  display: flex;
+}
+
+.contact-details a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.contact-details a:hover {
+  text-decoration: underline;
+}
+
+.si {
+  padding: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-section {
+    padding: 20px;
+  }
+
+  .contact-heading {
+    font-size: 48px;
+  }
+  .vertical-line {
+    width: 30%; /* Make it span the full width for horizontal layout */
+    height: 1px; /* Adjust thickness for horizontal line */
+    margin: 10px 0 20px 0px;    /* Vertical spacing between items */
+    align-self: auto; /* Reset alignment for horizontal line */
+  }
+
+  .contact-content,
+  .contact-info {
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 100%;
+    margin-bottom: 0;
+  }
+  .contact-content{
+    margin-bottom: -50px;
+  }
+
+  .contact-arrow {
+    align-self: flex-end;
+    font-size: 1.2em;
+  }
+
+  .contact-item {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+}

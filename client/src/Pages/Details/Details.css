@@ -1,0 +1,166 @@
+.master {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+.details-container{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 30px;
+}
+
+.details-heading {
+    text-align: center;
+    padding: 20px 0;
+    color: #fff;
+}
+
+.details-heading h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-family: "Aspekta", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    line-height: 50px;
+}
+
+.details-heading p {
+    font-size: 1em;
+    width: 70%;
+    margin: auto;
+    /* border: 2px solid red; */
+}
+
+.project-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    
+    background-color: #000;
+    color: #fff;
+}
+
+.goodimg img {
+    width: 100%;
+    height: 80vh;
+    object-fit: contain;
+    border-radius: 15px;
+}
+
+/* Grid Container */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns by default */
+    gap: 20px; /* Spacing between cards */
+    margin: 20px 0;
+  }
+  
+  /* Individual Card */
+  .detail-card {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    height: 40vh; /* Adjust height to your liking */
+  }
+  
+  /* Image inside the card */
+  .detail-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Makes the image cover the entire card without distortion */
+  }
+  
+  /* Responsive design for tablet screens */
+  @media (max-width: 1024px) {
+    .portfolio-grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+    }
+  }
+  
+  /* Responsive design for mobile screens */
+  @media (max-width: 768px) {
+    .portfolio-grid {
+      grid-template-columns: 1fr; /* 1 column on mobile devices */
+      margin: 15px;
+    }
+    .details-heading p{
+      /* border: 2px solid rgb(47, 255, 0); */
+      width: 100%;
+    }
+  }
+  
+
+.detail-card:hover {
+    transform: translateY(-10px);
+}
+
+/* FROM HERE */
+
+/* Testimonial Card Container */
+.testimonial-card {
+    /* border: 2px solid rgb(187, 255, 0); */
+    border-radius: 10px;
+    max-width: 80%; /* Ensure the card takes full width of the slide */
+    height: 60vh;
+    display: flex;
+    margin-left: 35px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; 
+    transition: transform 0.3s ease; /* Smooth hover transition */
+  }
+  
+  /* Testimonial Video */
+  .testimonial-photo {
+    /* border: 2px solid red; */
+    /* width: 40%; */
+    /* height: 7000vh; */
+    object-fit: cover; /*Make sure the video covers the entire card
+    /* border-radius: 60px; Apply the same border-radius to the video */
+  }
+  
+  
+  /* Swiper container adjustments */
+  .mySwiper {
+    padding-bottom: 20px; /* Adds space below the swiper */
+  
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 768px) {
+    .testimonial-card {
+      height: 54vh;
+      border-radius: 16px;
+      margin-left: 0px;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .testimonial-card {
+      /* height: 40vh; Increase height for larger screens */
+    }
+  }
+  
+
+@media (max-width: 768px) {
+    .testimonial-slide {
+        display: flex;
+        justify-content: center;
+        margin-right: 20px !important;
+    }
+
+    .other-grid {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 20px;
+        margin: 0;
+    }
+
+    .goodimg {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {}

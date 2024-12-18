@@ -1,0 +1,154 @@
+.Newsletter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin:0 auto;
+  margin-top: 100px;
+  max-width: 1200px;
+  /* text-align: center; */
+}
+
+.Newsletter h1 {
+  font-size: 4.5rem;
+  /* Scales dynamically */
+  /* margin-left: 90px; */
+  font-weight: 700;
+  
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  /* Scales dynamically */
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.flex h1{
+      font-size: 60px;
+    font-weight: 700;
+    margin: 0;
+    line-height: normal;
+    font-family: "Aspekta", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.right-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.right-flex-inner {
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: rgb(45, 45, 41);
+  width: 100%;
+  max-width: 500px;
+  /* Limits the width on large screens */
+}
+
+input {
+  border: 2px solid white;
+  border-radius: 50px;
+  padding: 10px 0 10px 20px;
+  background-color: transparent;
+  color: white;
+  font-size: 1rem;
+  width: 100%;
+}
+
+input::placeholder {
+  color: #ccc;
+}
+
+.newsletter-btn {
+  background-color: white;
+  color: black;
+  padding: 5px 16px 5px 16px;
+  border-radius: 40px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: 0.3s;
+}
+
+.newsletter-btn:hover {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  .Newsletter {
+    flex-direction: column;
+    text-align: none;
+  }
+
+  .Newsletter h1 {
+    font-size: 48px;
+    margin-left: 0;
+    padding: 20px;
+    /* Center align the heading */
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .right-flex-inner {
+    width: 90%;
+    /* Increase flexibility for smaller screens */
+    padding: 15px;
+    text-align: center;
+ 
+  
+  }
+
+  input {
+    font-size: 0.9rem;
+    padding: 10px 0 10px 20px;
+  }
+
+  .newsletter-btn {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .Newsletter h1 {
+    font-size: 48px;
+    margin-left: 0;
+  }
+  h2 {
+    font-size: 35px;
+    font-weight: 700;
+  }
+
+  input {
+    font-size: 0.8rem;
+    padding: 10px 0 10px 20px;
+  }
+
+  .newsletter-btn {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+  }
+}

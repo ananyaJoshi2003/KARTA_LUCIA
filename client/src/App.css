@@ -1,0 +1,26 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+.arrow {
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 10px;
+  font-size: 1.2em;
+}
+
+.contact-link {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+}
+
+.KL-logo img{
+  margin: 0 auto;
+}

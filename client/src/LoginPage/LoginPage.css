@@ -1,0 +1,113 @@
+/* LoginPage.css */
+
+.login-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    /* Gradient background */
+}
+
+.login-container {
+    background-color: #fff;
+    /* White background for the form */
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    transition: transform 0.3s;
+}
+
+.login-container:hover {
+    transform: translateY(-10px);
+    /* Hover effect */
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    text-align: center;
+    color: #333;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.form-group label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-icon {
+    margin-right: 10px;
+    color: #007bff;
+    /* Blue color for icons */
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    color: black;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+    border-color: #007bff;
+    /* Blue border on focus */
+}
+
+.error-text {
+    color: #e74c3c;
+    /* Red color for errors */
+    font-size: 0.875rem;
+}
+
+.submit-button {
+    padding: 12px;
+    font-size: 1.1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+    /* Scale effect on hover */
+}
+
+.additional-links {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.additional-links a {
+    color: #007bff;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.additional-links a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
